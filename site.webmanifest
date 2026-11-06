@@ -1,0 +1,17 @@
+{
+  "name": "Protocool",
+  "short_name": "Protocool",
+  "description": "Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fdfdfe",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

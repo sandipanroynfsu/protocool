@@ -1,0 +1,7 @@
+node_modules/
+dist/
+rea-target/
+.vercel/
+*.log
+.DS_Store
+build-protocool.js

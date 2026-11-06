@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Protocool · Interactive Network Protocol Explorer</title>
+    <meta
+      name="description"
+      content="Protocool: Watch the internet work, packet by packet. Interactive lessons on HTTP, HTTPS, TCP, UDP, IP, DNS, DHCP, ICMP, SMTP, POP3, IMAP, FTP, SSH and TLS, with every packet decoded byte by byte."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fdfdfe" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Protocool" />
+    <meta property="og:title" content="Protocool · Interactive Network Protocol Explorer" />
+    <meta property="og:description" content="Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS, with every packet decoded byte by byte." />
+
+    <script>
+      // Apply theme immediately before rendering to eliminate flash
+      try {
+        const saved = localStorage.getItem('protocool:theme')
+        const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        if (saved) {
+          for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+            meta.content = dark ? '#0b1020' : '#fdfdfe'
+          }
+        }
+      } catch {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <p style="margin: 40px; font: 16px/1.5 ui-monospace, monospace; color: #00238a">
+        Protocool animates packets as they travel the network, so it needs JavaScript. Please turn it on to start the lessons.
+      </p>
+    </noscript>
+  </body>
+</html>

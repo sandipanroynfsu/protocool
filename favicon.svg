@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="coolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" />
+      <stop offset="50%" stop-color="#0066ff" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#080d1a"/>
+  <g fill="none" stroke="url(#coolGrad)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M32 6 L56 18 L32 30 L8 18 Z" fill="#00ffcc" fill-opacity="0.15" />
+    <path d="M8 18 L32 30 L32 44 L8 32 Z" fill="#0066ff" fill-opacity="0.2" />
+    <path d="M56 18 L32 30 L32 44 L56 32 Z" fill="#7928ca" fill-opacity="0.2" />
+    <path d="M8 32 L32 44 L32 58 L8 46 Z" fill="#0066ff" fill-opacity="0.1" />
+    <path d="M56 32 L32 44 L32 58 L56 46 Z" fill="#7928ca" fill-opacity="0.1" />
+  </g>
+  <circle cx="32" cy="30" r="3" fill="#00ffcc"/>
+</svg>
