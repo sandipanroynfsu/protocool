@@ -25,20 +25,6 @@
 
 ---
 
-## 🛠️ Architecture & REA Evidence Summary
-
-The application was analyzed and reverse-engineered using **REA (Reverse Engineer Anything)**:
-
-- **Browser Scenario Capture Evidence**: `ev_8d57516e2b85364c3a779dfc60bf67e96e9be93d9d897dff1b4a5f38b1726d18`
-- **JavaScript Application Graph Evidence**: `ev_6d3d22f497741f1745c1242979153a086838b49202b1d8fd5ac7b8dfd42b5301` & `ev_052a5ca71ca2eb05f0a4f5c040d6cfa1cba8e3b2e36b8e3a24b07fb3e7cfab22`
-- **Framework**: High-performance Vanilla JavaScript ESM bundle without heavy virtual DOM overhead.
-- **Topology & Animation**: Dynamic SVG vector path interpolation animating packet movement between client, router, DNS server, internet gateway, and destination servers.
-- **Wireshark Wire Decoder**: Decodes frame layers byte-by-byte (Ethernet II, IPv4, TCP/UDP headers, TLS records, application payloads).
-- **Internationalization (i18n)**: Fully supported across 15 languages (English, Spanish, Portuguese, French, German, Turkish, Ukrainian, Indonesian, Japanese, Simplified Chinese, Traditional Chinese, Korean, Hindi, Arabic, Hebrew) with RTL support.
-- **Storage & State**: Clean local state using `protocool:progress:v1`, `protocool:theme`, `protocool:speed`, and `protocool:view`.
-
----
-
 ## 🚀 Quick Start
 
 ### 1. Run with Node.js Built-in Server
