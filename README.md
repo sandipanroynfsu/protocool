@@ -5,11 +5,8 @@
 
 ---
 
-## 🌟 What is Protocool?
 
-**Protocool** is a faithful, enhanced reconstruction of the interactive networking education application originally hosted at `protocol-explorer-alpha.vercel.app`. It allows engineers, students, and networking enthusiasts to inspect the internet at the microscopic level: from DNS queries and TCP three-way handshakes to TLS record negotiation, HTTP transactions, and packet-level byte encoding.
-
-### 📚 Supported Protocol Lessons (14 Protocols)
+### 📚 Supported Protocol Lessons (14 Protocol
 
 1. **HTTP** (`Layer 7 - Application`): Client Request, DNS Resolution, TCP Connection, HTTP Exchange, Page Rendering
 2. **HTTPS** (`Layer 7 - Security`): Secure Request, DNS Lookup, TCP Handshake, TLS Handshake, Encrypted Exchange, Padlock Rendering
